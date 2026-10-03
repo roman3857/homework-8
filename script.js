@@ -54,3 +54,25 @@ bookmarkList.addEventListener("click", (event) => {
 });
 
 renderBookmarks();
+
+const usernameInput = document.querySelector("#username");
+const passwordInput = document.querySelector("#password");
+const saveBtn = document.querySelector("#saveBtn");
+
+const savedData = JSON.parse(localStorage.getItem("formData"));
+
+if (savedData) {
+  usernameInput.value = savedData.username;
+  passwordInput.value = savedData.password;
+}
+
+saveBtn.addEventListener("click", () => {
+  const formData = {
+    username: usernameInput.value,
+    password: passwordInput.value,
+  };
+
+  localStorage.setItem("formData", JSON.stringify(formData));
+
+  alert("Дані збережено!");
+});

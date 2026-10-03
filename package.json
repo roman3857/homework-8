@@ -21,6 +21,7 @@
     "handlebars": "^4.7.9"
   },
   "devDependencies": {
-    "parcel": "^2.16.4"
+    "parcel": "^2.16.4",
+    "parcel-transformer-hbs": "^1.0.4"
   }
 }

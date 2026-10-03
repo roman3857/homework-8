@@ -1,18 +1,62 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Homework 8</title>
+  <link rel="stylesheet" href="./style.css">
 </head>
+
 <body>
-    <div class="container" id="bookmarkApp">
-  <h1>Закладки</h1>
-  <input type="text" id="bookmarkInput" placeholder="URL">
-  <button id="addBookmarkBtn">Додати</button>
-  <ul id="bookmarkList"></ul>
-  <script src="./script.js"></script>
+
+  <!-- Закладки -->
+  <div class="container" id="bookmarkApp">
+    <h1>Закладки</h1>
+
+    <input
+      type="text"
+      id="bookmarkInput"
+      placeholder="URL"
+    >
+
+    <button id="addBookmarkBtn">Додати</button>
+
+    <ul id="bookmarkList"></ul>
+  </div>
+
+
+  <div class="container" id="formApp">
+    <h1>Форма</h1>
+
+    <input
+      type="text"
+      id="username"
+      placeholder="Логін"
+    >
+
+    <input
+      type="password"
+      id="password"
+      placeholder="Пароль"
+    >
+
+    <button id="saveBtn">Зберегти</button>
+  </div>
+
+
+<div class="container">
+  <h1>Товари</h1>
+
+  <input
+    type="text"
+    id="searchInput"
+    placeholder="Пошук товару..."
+  >
+
+  <div id="productList"></div>
 </div>
+
+<script src="./script.js"></script>
+<script type="module" src="./index.js"></script>
 </body>
 </html>
